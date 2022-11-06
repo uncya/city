@@ -1,0 +1,400 @@
+@charset "UTF-8";
+
+/*----------------
+   ここから記述全体
+   -----------------*/
+html {
+  /* 10px */
+  font-size: 62.5%;
+  scroll-padding-top: 150px;
+}
+
+* {
+  font-family: serif;
+  box-sizing: border-box;
+  /* max-width: 1800px; */
+  /* margin: 0 auto; */
+}
+a {
+  text-decoration: none;
+  color: #080808;
+}
+/* ニュー記述*/
+/* .maxwidth {
+    width:1790px ;
+    max-width: 1790px;
+    margin: 0 auto;
+} */
+
+img {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  /* background-color: bisque; */
+}
+/*----------------
+   ヘッダーロゴ
+-----------------*/
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  /* background-color: #fff; */
+  position: fixed;
+  z-index: 5;
+  margin: 0;
+}
+.logo {
+  font-family: sans-serif;
+  width: 20%;
+  height: 120px;
+  background-color: #144e94;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(97, 91, 91);
+  padding: 0 10px;
+}
+.logo img {
+  max-width: 100%;
+  padding-right: 5px;
+}
+.logo span {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 7px;
+}
+.logo p {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+}
+/*----------------
+   ヘッダーNAV
+-----------------*/
+nav {
+  height: 120px;
+  width: 90%;
+  border-bottom: 2px solid #eee;
+  background-color: #fff;
+}
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 40px 40px;
+}
+
+li a {
+  font-size: 25px;
+  padding: 30px 50px;
+  color: black;
+}
+/*----------------
+   レスポンシブハンバーガー
+-----------------*/
+/* .responsive-icon {
+  display: none;
+} */
+.burger,
+.menu {
+  display: none;
+}
+
+/*----------------
+   ラッパー
+-----------------*/
+.blue {
+  position: fixed;
+  width: 10px;
+  height: 100%;
+  background-color: #144e94;
+  z-index: 10;
+}
+
+/*----------------
+   heroイメージ
+-----------------*/
+
+.hero {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 200px;
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  margin-top: 100px;
+}
+/* .catchcopy {
+  position: absolute;
+  top: 20%;
+  background-color: #208060;
+  width: 15%;
+  height: auto;
+  color: #fff;
+  /* 縦文字
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 100px;
+} */
+
+/*----------------
+   イメージ
+-----------------*/
+.image {
+  height: 900px;
+  width: 100%;
+  /* width: 100%; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  position: relative;
+  margin-bottom: 120px;
+}
+.sice1 {
+  width: 130px;
+  height: 80px;
+  position: absolute;
+  /* transform: translate(-50%); */
+  left: 320px;
+}
+.sice2 {
+  width: 70%;
+  object-fit: cover;
+  max-width: 100%;
+  height: 620px;
+  position: absolute;
+  right: 0px;
+  background-color: #144e94;
+  /* box-sizing: bor; */
+  /* overflow: hidden; */
+}
+
+.sice3 {
+  width: 30%;
+  margin-top: 100px;
+  height: 620px;
+  position: absolute;
+  left: -50px;
+  bottom: 8px;
+  z-index: 1;
+  background-color: aqua;
+  object-fit: cover;
+}
+.text {
+  width: 505px;
+  height: 212px;
+  font-size: 1.7rem;
+  position: absolute;
+  left: 530px;
+  bottom: 10px;
+}
+/*----------------
+想い
+-----------------*/
+.thought {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 200px;
+  height: 600px;
+  width: 100%;
+}
+.woman img {
+  width: 100%;
+}
+
+.title {
+  width: 423px;
+  background-color: #fff;
+  position: relative;
+  height: 510px;
+}
+.title h2 {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 3rem;
+  padding-left: 150px;
+}
+.title p {
+  position: absolute;
+  right: 140px;
+  top: 3px;
+}
+.title a {
+  position: absolute;
+  bottom: 20px;
+  left: 150px;
+  color: #144e94;
+}
+.woman {
+  width: 680px;
+  height: 510px;
+}
+.woman h6 {
+  padding: 30px 0 20px 0;
+  font-size: 14px;
+}
+.woman h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.woman h3 span {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+/*----------------
+私たちと街
+-----------------*/
+.strength {
+  width: 600px;
+  height: 132px;
+  margin: 0 auto 100px auto;
+  display: block;
+}
+.strength h3 {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+
+.strength p {
+  text-align: center;
+  font-size: 1.9rem;
+  padding: 5px;
+  letter-spacing: 2px;
+  line-height: 2em;
+}
+
+/*----------------
+案内・概要
+-----------------*/
+.overview {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.overview-left,
+.overview-right {
+  width: 520px;
+  height: 520px;
+}
+
+.overview-text2,
+.overview-text1 {
+  width: 380px;
+  height: 520px;
+  position: relative;
+}
+.overview-text2 h3,
+.overview-text1 h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+.overview-text2 span,
+.overview-text1 span {
+  font-size: 1.5rem;
+}
+.overview-text2 a,
+.overview-text1 a {
+  font-size: 1.8rem;
+  color: #144e94;
+  position: absolute;
+  bottom: 0px;
+  left: 120px;
+}
+.overview img {
+  display: block;
+}
+/*---------------
+街並み
+-----------------*/
+
+.city-img {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto 50px auto;
+  background-image: url(./img/befor1.jpg);
+  background-position: center 80%;
+}
+.city {
+  max-width: 100%;
+  width: 1430px;
+  margin: 0 auto 100px auto;
+  display: block;
+}
+/*----------------
+ラスト
+-----------------*/
+.last {
+  border-top: 1px solid #eee;
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1600px;
+}
+.last-left {
+  width: 30%;
+  padding: 50px 0 0 30px;
+  font-size: 20px;
+}
+.last-left h3 {
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+}
+.info a {
+  font-size: 15px;
+}
+
+.map {
+  color: rgb(92, 234, 132);
+  border-bottom: 1px solid #59e28e;
+}
+.last {
+  width: 100%;
+}
+.last-right {
+  display: flex;
+  position: relative;
+  width: 70%;
+}
+.last-right nav {
+  border-bottom: none;
+}
+.last-right ul {
+  padding: 40px 0 0 0;
+}
+.last-right li {
+  width: 150px;
+}
+.last-right a {
+  font-size: 1.6rem;
+  padding: 0;
+}
+
+/* 問い合わせ */
+.info {
+  position: absolute;
+  bottom: 0px;
+  right: 60px;
+}
+
+/*----------------
+フッター
+-----------------*/
+footer {
+  background-color: #144e94;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  font-weight: normal;
+  margin-top: 100px;
+}
